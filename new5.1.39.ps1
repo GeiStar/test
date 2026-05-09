@@ -2,23 +2,7 @@
 # Kiosk Display Manager (V7.9-Smart-Complete)
 # ==========================================
 # Complete logic: Check monitor count, then decide
-
-param(
-    [Parameter(Mandatory=$false)]
-    [ValidateSet("Clone","Extend","Internal","External")]
-    [string]$Mode = "Clone",
-    
-    [int]$IntervalSeconds = 5,
-    
-    [string]$LogPath,
-    
-    [switch]$DisableEnforce
-)
-
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
-
-# ==========================================
+=========================
 # 1. Process Priority
 # ==========================================
 Add-Type -TypeDefinition @"

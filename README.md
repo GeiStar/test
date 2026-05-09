@@ -28,34 +28,7 @@
 
 ## 1\. Project Introduction
 
-### 1.1 Background
 
-In public educational environments such as schools, students frequently use `Win+P` to randomly change display topology, causing:
-
-- Images displayed only on classroom TVs while the teacher's computer screen goes black
-- Login screens becoming invisible due to incorrect display mode settings
-- Disruption of normal teaching activities
-
-**Windows Monitor Manager** was developed to address these issues — by **forcefully locking display modes** (typically Clone/Duplicate mode), ensuring the system can **self-heal** even after malicious or accidental modifications, guaranteeing multi-monitor availability at all times.
-
-### 1.2 Core Capabilities
-
-| Capability | Description |
-| --- | --- |
-| 🔄 **Auto-Recovery** | Real-time monitoring of display mode; automatically reverts to target mode when tampered with |
-| 🔒 **Force Lock** | Service mode provides background protection; tray mode provides convenient foreground control |
-| ⌨️ **Global Hotkeys** | One-key switching with `Alt+Shift+W/E` shortcuts for efficient operation |
-| 👤 **User-Aware** | Supports Session 0 isolation; does not interfere with normal user desktop operations |
-| 🖥️ **Multi-Scenario Support** | Covers everything from personal home use to school computer labs with four operation modes |
-
-* * *
-
-## 2\. Command Line Parameters
-
-### Basic Syntax
-
-```powershell
-monitor-service.exe [OPTIONS] [COMMAND]
 ```
 
 ### Available Parameters

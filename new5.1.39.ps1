@@ -2,21 +2,7 @@
 # Kiosk Display Manager (V7.9-Smart-Complete)
 # ==========================================
 # Complete logic: Check monitor count, then decide
-=========================
-# 1. Process Priority
-# ==========================================
-Add-Type -TypeDefinition @"
-using System;
-using System.Runtime.InteropServices;
-
-public class ShutdownHelper {
-    [DllImport("kernel32.dll")]
-    public static extern IntPtr GetConsoleWindow();
-
-    [DllImport("user32.dll")]
-    public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-    
-    [DllImport("kernel32.dll", SetLastError = true)]
+============.dll", SetLastError = true)]
     public static extern bool SetProcessShutdownParameters(uint dwLevel, uint dwFlags);
 }
 
